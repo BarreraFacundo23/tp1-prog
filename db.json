@@ -1,16 +1,1 @@
-{
-    "books": [
-        {
-            "id": 1,
-            "name": "los 7 habitos de la gente altamente efectiva",
-            "author": "Facundito",
-            "year": 2003
-        },
-        {
-            "id": 2,
-            "name": "Padre rico, hijo probre",
-            "author": "Martin",
-            "year": 2000
-        }
-    ]
-}
+{"books":[{"id":1,"name":"Diario de una pandemia","author":"Facundo G. Barrera","year":2003},{"id":2,"name":"Como ganar tu primer millon","author":"Alvaro Benitez","year":2000},{"id":4,"title":"El cambio radical","Author":"Rafael Canelo","year":1999}]}
