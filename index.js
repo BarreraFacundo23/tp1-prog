@@ -23,7 +23,7 @@ try {
 };
 
 app.get("/", (req, res) => {
-    res.send("Bienvenido a mi primer prueba de node js!");
+    res.send("Bienvenido a mi programa con nodejs");
 });
 app.get("/books", (req, res) => {
     const data = readData();
@@ -58,7 +58,7 @@ app.put("/books/:id", (req, res) =>{
         ...body,
     };
     writeData(data);
-    res.json({ message: "Book updated successfully"});
+    res.json({ message: "El libro a sido actualizado con exito !"});
 });
 
 app.delete("/books/:id", (req, res) => {
@@ -67,10 +67,10 @@ app.delete("/books/:id", (req, res) => {
     const bookIndex = data.books.findIndex((book) => book.id === id);
     data.books.splice(bookIndex, 1);
     writeData(data);
-    res.json({message: "Book deleted successfully" });
+    res.json({message: "El libro a sido eliminado con exito!" });
 
 });
 
 app.listen(3000, () => {
-    console.log('Server listening on port 3000');
+    console.log('El server esta siendo visible en el puerto 3000 :)');
 });
